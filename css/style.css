@@ -1,7 +1,8 @@
 /* ROOTS */
 :root {
   --player-height: 80px;
-  --sidebar-width: 100px;
+  --sidebar-width: 40px;
+  --header-height: 80px;
 }
 /* RESET */
 * {
@@ -52,16 +53,31 @@ a {
   height: 100vh;
   overflow: hidden;
   background-color: #141922;
+  color: white;
 }
 
 #top-content {
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(100vh - var(--player-height));
 }
 
 #sidebar {
   background-color: #000000;
   width: var(--sidebar-width);
+  overflow: auto;
+}
+
+#main-content {
+  width: calc(100% - var(--sidebar-width));
+}
+#main-header {
+  background-color: #00000080;
+  text-align: end;
+  height: var(--header-height);
+}
+#main-body {
+  height: calc(100vh - var(--player-height) - var(--header-height));
+  overflow: auto;
 }
 
 #player {
