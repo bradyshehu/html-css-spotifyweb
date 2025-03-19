@@ -58,6 +58,10 @@ a {
   height: 28px;
   text-align: center;
 }
+.align {
+  display: flex;
+  align-items: end;
+}
 /* LAYOUT */
 .wrapper {
   width: 100vw;
@@ -103,6 +107,7 @@ a {
   justify-content: space-between;
   padding: 1rem;
 }
+/* TOP SIDEBAR */
 #logo-xs {
   width: 100%;
   margin-bottom: 1rem;
@@ -114,9 +119,26 @@ a {
 #top-sidebar nav ul li img {
   width: 20px;
   padding-top: 0.5rem;
+  margin-right: 0.5rem;
 }
+/* PLAYLIST SIDEBAR */
+
+/* BOTTOM SIDEBAR */
 #bottom-sidebar img {
   width: 20px;
+}
+#bottom-sidebar span {
+  padding-left: 0.5rem;
+}
+#bottom-sidebar .slash {
+  width: 100%;
+  border: 1px solid grey;
+}
+#download {
+  padding-bottom: 0.5rem;
+}
+#user {
+  padding-top: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
