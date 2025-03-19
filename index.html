@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
     <link
@@ -21,17 +21,74 @@
     <div class="wrapper">
       <div id="top-content">
         <!-- SIDEBAR -->
-        <div id="sidebar"></div>
+        <div id="sidebar">
+          <!-- TOP SIDEBAR -->
+          <div id="top-sidebar">
+            <!-- LOGO -->
+            <div id="logo-xs">
+              <img src="./img/logo-small.svg" alt="Logo small" />
+            </div>
+            <div id="logo" class="xs-none s-display-inline-block">
+              <img src="./img/logo.svg" alt="Logo" />
+            </div>
+            <nav>
+              <ul>
+                <li>
+                  <img src="./img/home.svg" alt="home" />
+                  <span class="xs-none s-display-inline-block"> Home</span>
+                </li>
+                <li>
+                  <img src="./img/search.svg" alt="search" />
+                  <span class="xs-none s-display-inline-block"> Cerca</span>
+                </li>
+                <li>
+                  <img src="./img/libreria.svg" alt="library" />
+                  <span class="xs-none s-display-inline-block">
+                    La tua libreria</span
+                  >
+                </li>
+              </ul>
+            </nav>
+            <section id="playlist" class="xs-none s-display-inline-block">
+              <h3>playlist</h3>
+              <div id="create"></div>
+              <ul>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+              </ul>
+            </section>
+          </div>
+          <!-- BOTTOM SIDEBAR -->
+          <div id="bottom-sidebar">
+            <div id="download">
+              <img src="./img/download.svg" alt="download" />
+              <span class="xs-none s-display-inline-block">Installa app</span>
+            </div>
+            <div class="slash"></div>
+            <div id="user">
+              <div class="circle">
+                <img src="./img/profile.svg" alt="user" />
+              </div>
+              <span class="xs-none s-display-inline-block">John Doe</span>
+            </div>
+          </div>
+        </div>
         <!-- CONTENUTO -->
         <div id="main-content">
           <!-- HEADER DEL CONTENUTO -->
           <div id="main-header">
-            <div class="button">Effettua l'upgrade</div>
+            <button class="button"><a>Effettua l'upgrade</a></button>
           </div>
           <!-- CONTENUTO PRINCIPALE -->
           <div id="main-body"></div>
         </div>
       </div>
+      <!-- PLAYER -->
       <div id="player"></div>
     </div>
   </body>

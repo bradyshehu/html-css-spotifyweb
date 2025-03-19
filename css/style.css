@@ -1,7 +1,7 @@
 /* ROOTS */
 :root {
   --player-height: 80px;
-  --sidebar-width: 40px;
+  --sidebar-width: 60px;
   --header-height: 80px;
 }
 /* RESET */
@@ -46,7 +46,18 @@ a {
 .col-1-6 {
   width: calc(100% / 3 / 2);
 }
-
+/* UTILITY */
+.xs-none {
+  display: none;
+}
+.circle {
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+}
 /* LAYOUT */
 .wrapper {
   width: 100vw;
@@ -83,4 +94,39 @@ a {
 #player {
   background-color: #282828;
   height: var(--player-height);
+}
+
+/* SIDEBAR */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+#logo-xs {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+#top-sidebar nav ul li img {
+  width: 20px;
+  padding-top: 0.5rem;
+}
+#bottom-sidebar img {
+  width: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --sidebar-width: 300px;
+  }
+  .s-display-inline-block {
+    display: inline-block;
+  }
+  #logo-xs {
+    display: none;
+  }
 }
