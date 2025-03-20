@@ -211,6 +211,9 @@ a {
 .bar:hover .current-bar {
   background-color: lime;
 }
+.bar:hover .current-bar::after {
+  display: flex;
+}
 
 /* PLAYER */
 #player {
@@ -286,13 +289,26 @@ a {
   width: 30%;
   background-color: white;
   height: 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+.current-bar::after {
+  content: "";
+  display: none;
+  width: 1rem;
+  height: 1rem;
+  /* padding: 5px; */
+  border-radius: 50%;
+  background-color: white;
+}
+
 .volume-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  width: 50px;
+  width: 80px;
 }
 
 @media screen and (min-width: 576px) {
