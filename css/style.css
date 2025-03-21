@@ -318,9 +318,11 @@ a {
 .s-col-1-2 {
   width: calc(100% / 2);
 }
-
-.section-title h2 {
+.section-title {
   margin: 1rem 0rem;
+}
+.section-title h2 {
+  padding: 1rem 0rem;
 }
 .description {
   color: gray;
@@ -341,6 +343,10 @@ a {
 .card-content .album {
   font-weight: bolder;
   margin: 0.5rem 0rem;
+}
+.card-img.round {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* HOVER */
