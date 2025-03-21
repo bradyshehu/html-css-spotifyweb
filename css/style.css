@@ -12,10 +12,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  max-width: 1100px;
-  margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* max-width: 1100px;
+  margin: auto; */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 ul {
@@ -32,20 +32,20 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  row-gap: 4rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  row-gap: 1rem;
 }
 [class*="col"] {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.col-1-3 {
+/* .col-1-3 {
   width: calc(100% / 3);
 }
 .col-1-6 {
   width: calc(100% / 3 / 2);
-}
+} */
 /* UTILITY */
 .xs-none {
   display: none;
@@ -70,6 +70,10 @@ a {
   color: white;
   border-radius: 1.5rem;
   margin: 1rem 0.5rem;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* LAYOUT */
 .wrapper {
@@ -290,6 +294,8 @@ a {
 }
 
 /* MAIN CONTENT */
+
+/* MAIN NAV */
 .navigate-content {
   display: flex;
   align-items: center;
@@ -299,14 +305,41 @@ a {
 }
 .navigate-content #menu-content {
   text-align: center;
-  color: #5a5a5a;
+  color: gray;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: bold;
 }
 .navigate-content #menu-content li {
   display: inline-block;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
+}
+/* RECENTLY PLAYED */
+.s-col-1-2 {
+  width: calc(100% / 2);
+}
+
+.section-title {
+  margin: 2rem 0rem;
+}
+.description {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card {
+  text-align: center;
+}
+.card-img {
+  position: relative;
+}
+.card-img img {
+  width: 100%;
+}
+.card-content .album {
+  font-weight: bolder;
+  margin: 0.5rem 0rem;
 }
 
 /* HOVER */
@@ -343,7 +376,7 @@ a {
 
 @media screen and (min-width: 576px) {
   :root {
-    --sidebar-width: 300px;
+    --sidebar-width: 250px;
   }
   .s-display-inline-block {
     display: inline-block;
@@ -353,4 +386,13 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
+  .md-col-1-4 {
+    width: calc(100% / 4);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .l-col-1-6 {
+    width: calc(100% / 6);
+  }
 }
