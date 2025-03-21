@@ -319,13 +319,14 @@ a {
   width: calc(100% / 2);
 }
 
-.section-title {
-  margin: 2rem 0rem;
+.section-title h2 {
+  margin: 1rem 0rem;
 }
 .description {
   color: gray;
   font-size: 0.8rem;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .card {
